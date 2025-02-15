@@ -1,0 +1,21 @@
+---
+# tasks file for nginx role
+- name: Install Nginx
+  apt:
+    name: nginx
+    state: present
+
+- name: Copy index.html to Nginx root directory
+  copy:
+    src: index.html
+    dest: /var/www/html/index.html
+
+- name: Start Nginx service
+  service:
+    name: nginx
+    state: started
+    enabled: yes
+
+- name: Post installation message
+  debug:
+    msg: "Nginx server installation completed successfully."

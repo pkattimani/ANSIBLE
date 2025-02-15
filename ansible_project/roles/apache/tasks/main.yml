@@ -1,0 +1,21 @@
+---
+# tasks file for apache role
+- name: Install Apache
+  apt:
+    name: apache2
+    state: present
+
+- name: Copy index.html to Apache root directory
+  copy:
+    src: index.html
+    dest: /var/www/html/index.html
+
+- name: Start Apache service
+  service:
+    name: apache2
+    state: started
+    enabled: yes
+
+- name: Post installation message
+  debug:
+    msg: "Apache server installation completed successfully."

@@ -1,0 +1,5 @@
+---
+- name: Configure Nginx Server Group
+  hosts: nginx
+  roles:
+    - role: nginx

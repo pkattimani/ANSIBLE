@@ -1,0 +1,10 @@
+---
+# tasks file for java role
+- name: Install Java
+  apt:
+    name: default-jdk
+    state: present
+
+- name: Post installation message
+  debug:
+    msg: "Java installation completed successfully on Apache server group."

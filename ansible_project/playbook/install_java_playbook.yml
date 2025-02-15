@@ -1,0 +1,5 @@
+---
+- name: Install Java on Apache Server Group
+  hosts: apache
+  roles:
+    - role: java
