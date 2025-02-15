@@ -1,0 +1,29 @@
+ansible_project/
+├── roles/
+│   ├── apache/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   ├── files/
+│   │   │   └── index.html
+│   │   └── meta/
+│   │       └── main.yml
+│   ├── nginx/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   ├── files/
+│   │   │   └── index.html
+│   │   └── meta/
+│   │       └── main.yml
+│   └── java/
+│       ├── tasks/
+│       │   └── main.yml
+│       └── meta/
+│           └── main.yml
+├── inventory/
+│   └── hosts
+├── playbooks/
+│   ├── apache_playbook.yml
+│   ├── nginx_playbook.yml
+│   └── install_java_playbook.yml
+├── ansible.cfg
+└── README.md
