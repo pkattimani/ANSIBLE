@@ -1,29 +1,13 @@
-Project Goal:
-To set up and configure two server groups using Ansible: one for Apache and another for Nginx. Additionally, this project includes the installation of Java on the Apache server group.
+# Ansible Configuration Management Project
 
-Components:
-Apache Server Group:
+## Project Overview
+This project aims to automate the configuration of two server groups using Ansible: one for Apache and another for Nginx. Additionally, it includes the installation of Java on the Apache server group after the Apache configuration is complete. This setup ensures efficient management and deployment of server configurations, adhering to best practices in DevOps.
 
-Install Apache HTTP Server.
+## Features
 
-Push a custom index.html file to the Apache root directory.
+1. **Server Group Configuration**:
+    - **Apache Server Group**: Installs Apache HTTP Server, deploys an HTML file with server information, starts the Apache service, and sends a post-installation message.
+    - **Nginx Server Group**: Installs Nginx HTTP Server, deploys an HTML file with server information, starts the Nginx service, and sends a post-installation message.
 
-Start the Apache service and ensure it is enabled to start on boot.
-
-Display a post-installation message.
-
-Nginx Server Group:
-
-Install Nginx HTTP Server.
-
-Push a custom index.html file to the Nginx root directory.
-
-Start the Nginx service and ensure it is enabled to start on boot.
-
-Display a post-installation message.
-
-Java Installation:
-
-Install Java on the Apache server group after the Apache configuration is complete.
-
-Display a post-installation message.
+2. **Java Installation**:
+    - Installs Java on the Apache server group using Ansible roles in a dedicated 
